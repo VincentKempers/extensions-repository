@@ -2,7 +2,7 @@
 export default ({ embed }) => {
     embed('body', `<script> const disableM2MClick = () => {
         const observer = new MutationObserver(() => {
-          const m2mElements = document.querySelectorAll('YOUR-SPECIFIC-CSS');
+          const m2mElements = document.querySelectorAll('.one-to-many li.v-list-item:has(.item-link), .many-to-many li.v-list-item:has(.item-link)');
 
           m2mElements.forEach(el => {
             // Prevent double-binding
